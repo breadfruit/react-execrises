@@ -1,0 +1,1 @@
+export interface DebounceOptions {    wait?: number;    //是否延迟之前执行函数    leading?: boolean;    //是否延迟之后执行函数    trailing?: boolean;    maxWait?: number;}
