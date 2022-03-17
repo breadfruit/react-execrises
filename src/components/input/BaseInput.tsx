@@ -1,0 +1,1 @@
+import { cloneElement, ReactElement, FC} from 'react'import type { BaseInputProps } from './interface';//封装input元素const BaseInput:FC<BaseInputProps> = (props) =>  {    const {        inputElement,        value,    } = props;    let element: ReactElement = cloneElement( inputElement, {        value    });    return element;}export  default BaseInput;
