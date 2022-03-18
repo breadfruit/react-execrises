@@ -1,0 +1,1 @@
+function myTag() {};export default myTag;
