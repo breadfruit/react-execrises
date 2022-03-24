@@ -1,0 +1,1 @@
+import {useRequest} from 'ahooks'function getUserName () {    return new Promise((resolve, rej) =>{        setTimeout(() => {            resolve('george')        }, 1000)    })}export default () => {    const {data, error, loading}  = useRequest(getUserName);    if(error) {    }    if (loading) {    }    return <div>Username: {data}</div>}

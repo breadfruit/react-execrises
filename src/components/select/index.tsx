@@ -1,0 +1,1 @@
+interface selectProps {    values: [],    defaultValues: string,    onValueChange: () =>void}function Select() {    return(        <>            <select >            </select>        </>    )}export default Select;

@@ -12,7 +12,13 @@ function App() {
       <Clock />
       <Content />
       <h3>==输入框==</h3>
-      <Input />
+      <Input
+          onFocus={() => {
+              console.log('focus')
+          }}
+      />
+        <h2>redux练习</h2>
+        
     </div>
   );
 }

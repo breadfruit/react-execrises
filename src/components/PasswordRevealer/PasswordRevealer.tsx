@@ -1,0 +1,1 @@
+import {useState} from "react";function  PasswordRevealer() {    const [shown, setShown] = useState(false);    return (        <div>            <input type={shown ? 'text' : 'password'}/>            <button onClick={()=> {setShown(!shown)}}>show/</button>        </div>    )}export  default PasswordRevealer;
