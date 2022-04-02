@@ -4,7 +4,7 @@ import Content from "./components/officialCase/useContext";
 import Input from "./components/input/input"
 import './App.css';
 import 'antd/dist/antd.css';
-import FilterTable from './components/filterTable'
+
 function App() {
   return (
     <div className="App">
@@ -17,7 +17,6 @@ function App() {
           }}
       />
         <h3>可筛选表单</h3>
-        <FilterTable></FilterTable>
         <h2>redux练习</h2>
 
     </div>
