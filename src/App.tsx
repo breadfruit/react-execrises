@@ -4,23 +4,27 @@ import Content from "./components/officialCase/useContext";
 import Input from "./components/input/input"
 import './App.css';
 import 'antd/dist/antd.css';
-
+import  useEventTarget  from './components/useEventTarget/'
 function App() {
-  return (
-    <div className="App">
-      {/*<Clock />*/}
-      <Content />
-      <h3>==输入框==</h3>
-      <Input
-          onFocus={() => {
-              console.log('focus')
-          }}
-      />
-        <h3>可筛选表单</h3>
-        <h2>redux练习</h2>
-
-    </div>
-  );
+      const [value, { reset, onChange }] = useEventTarget({ initialValue: 'this is initial value' });
+      return (
+        <div className="App">
+          {/*<Clock />*/}
+          {/*<Content />*/}
+          {/*<h3>==输入框==</h3>*/}
+          {/*<Input*/}
+          {/*    onFocus={() => {*/}
+          {/*        console.log('focus')*/}
+          {/*    }}*/}
+          {/*/>*/}
+          {/*  <h3>可筛选表单</h3>*/}
+          {/*  <h2>redux练习</h2>*/}
+            <input value={value} onChange={onChange} style={{ width: 200, marginRight: 20 }} />
+            <button type="button" onClick={reset}>
+                reset
+            </button>
+        </div>
+      );
 }
 
 export default App;
